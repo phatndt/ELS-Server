@@ -23,8 +23,8 @@ import java.util.ArrayList;
 import java.util.Map;
 
 @Controller
-@Configuration
-@EnableJpaRepositories
+//@Configuration
+//@EnableJpaRepositories
 @SpringBootApplication
 public class Main {
 //
