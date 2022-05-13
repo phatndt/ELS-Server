@@ -21,12 +21,12 @@ public class Listening {
         this.audio = audio;
     }
 
-    public void setUuid(String uuid) {
+    public void setId(String uuid) {
         this.uuid = uuid;
     }
 
     @Id
-    public String getUuid() {
+    public String getId() {
         return uuid;
     }
 
