@@ -27,22 +27,27 @@
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-jpa</artifactId>
+<!--      <version>2.6.6</version>-->
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-thymeleaf</artifactId>
-      <exclusions>
-      	<exclusion>
-      		<groupId>nz.net.ultraq.thymeleaf</groupId>
-      		<artifactId>thymeleaf-layout-dialect</artifactId>
-      	</exclusion>
-      </exclusions>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>org.springframework.boot</groupId>-->
+<!--      <artifactId>spring-boot-starter-thymeleaf</artifactId>-->
+<!--      <exclusions>-->
+<!--      	<exclusion>-->
+<!--      		<groupId>nz.net.ultraq.thymeleaf</groupId>-->
+<!--      		<artifactId>thymeleaf-layout-dialect</artifactId>-->
+<!--      	</exclusion>-->
+<!--      </exclusions>-->
+<!--    </dependency>-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
@@ -52,35 +57,35 @@
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
     </dependency>
-    <dependency>
-      <groupId>com.zaxxer</groupId>
-      <artifactId>HikariCP</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.webjars</groupId>
-      <artifactId>jquery</artifactId>
-      <version>${webjars-jquery.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.webjars</groupId>
-      <artifactId>jquery-ui</artifactId>
-      <version>${webjars-jquery-ui.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.webjars</groupId>
-      <artifactId>bootstrap</artifactId>
-      <version>${webjars-bootstrap.version}</version>
-    </dependency>
-    <dependency>
-    <groupId>org.webjars</groupId>
-      <artifactId>webjars-locator</artifactId>
-      <version>0.30</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-devtools</artifactId>
-      <scope>runtime</scope>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>com.zaxxer</groupId>-->
+<!--      <artifactId>HikariCP</artifactId>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--      <groupId>org.webjars</groupId>-->
+<!--      <artifactId>jquery</artifactId>-->
+<!--      <version>${webjars-jquery.version}</version>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--      <groupId>org.webjars</groupId>-->
+<!--      <artifactId>jquery-ui</artifactId>-->
+<!--      <version>${webjars-jquery-ui.version}</version>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--      <groupId>org.webjars</groupId>-->
+<!--      <artifactId>bootstrap</artifactId>-->
+<!--      <version>${webjars-bootstrap.version}</version>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--    <groupId>org.webjars</groupId>-->
+<!--      <artifactId>webjars-locator</artifactId>-->
+<!--      <version>0.30</version>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--      <groupId>org.springframework.boot</groupId>-->
+<!--      <artifactId>spring-boot-devtools</artifactId>-->
+<!--      <scope>runtime</scope>-->
+<!--    </dependency>-->
   </dependencies>
 
   <build>
