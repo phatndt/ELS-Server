@@ -12,6 +12,17 @@ public class ListeningQuestion {
     private String content;
     private String answerKey;
 
+    public ListeningQuestion() {
+
+    }
+
+    public ListeningQuestion(String uuid, String listeningUuid, String content, String answerKey) {
+        this.uuid = uuid;
+        this.listeningUuid = listeningUuid;
+        this.content = content;
+        this.answerKey = answerKey;
+    }
+
     @Id
     public String getUuid() {
         return uuid;
