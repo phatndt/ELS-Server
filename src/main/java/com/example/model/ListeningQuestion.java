@@ -9,7 +9,7 @@ import javax.persistence.Table;
 @Table(name = "listeningquestion")
 public class ListeningQuestion {
     private String uuid;
-    private String listeningId;
+    private String listeningUuid;
     private String content;
     private String answer;
 
@@ -17,9 +17,9 @@ public class ListeningQuestion {
 
     }
 
-    public ListeningQuestion(String uuid, String listeningId, String content, String answer) {
+    public ListeningQuestion(String uuid, String listeningUuid, String content, String answer) {
         this.uuid = uuid;
-        this.listeningId = listeningId;
+        this.listeningUuid = listeningUuid;
         this.content = content;
         this.answer = answer;
     }
@@ -34,13 +34,13 @@ public class ListeningQuestion {
     }
 
     @Column(name = "listeningid")
-    public String getlisteningId() {
-        return listeningId;
+    public String getlisteningUuid() {
+        return listeningUuid;
     }
 
     @Column(name = "listeningid")
-    public void setlisteningId(String listeningId) {
-        this.listeningId = listeningId;
+    public void setlisteningUuid(String listeningUuid) {
+        this.listeningUuid = listeningUuid;
     }
 
     public String getContent() {
