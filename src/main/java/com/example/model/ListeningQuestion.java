@@ -8,24 +8,20 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "listeningQuestion")
 public class ListeningQuestion {
-    @Column(name = "id")
     private String uuid;
-    @Column(name = "listeningId")
-    private String listeningUuid;
-    @Column(name = "content")
+    private String listeningId;
     private String content;
-    @Column(name = "answer")
-    private String answerKey;
+    private String answer;
 
     public ListeningQuestion() {
 
     }
 
-    public ListeningQuestion(String uuid, String listeningUuid, String content, String answerKey) {
+    public ListeningQuestion(String uuid, String listeningId, String content, String answer) {
         this.uuid = uuid;
-        this.listeningUuid = listeningUuid;
+        this.listeningId = listeningId;
         this.content = content;
-        this.answerKey = answerKey;
+        this.answer = answer;
     }
 
     @Id
@@ -37,12 +33,12 @@ public class ListeningQuestion {
         this.uuid = uuid;
     }
 
-    public String getListeningUuid() {
-        return listeningUuid;
+    public String getlisteningId() {
+        return listeningId;
     }
 
-    public void setListeningUuid(String listeningUuid) {
-        this.listeningUuid = listeningUuid;
+    public void setlisteningId(String listeningId) {
+        this.listeningId = listeningId;
     }
 
     public String getContent() {
@@ -53,11 +49,11 @@ public class ListeningQuestion {
         this.content = content;
     }
 
-    public String getAnswerKey() {
-        return answerKey;
+    public String getanswer() {
+        return answer;
     }
 
-    public void setAnswerKey(String answerKey) {
-        this.answerKey = answerKey;
+    public void setanswer(String answer) {
+        this.answer = answer;
     }
 }

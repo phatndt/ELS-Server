@@ -8,13 +8,9 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "listening")
 public class Listening {
-    @Column(name = "id")
     private String uuid;
-    @Column(name = "title")
     private String title;
-    @Column(name = "id")
     private int duration;
-    @Column(name = "audio")
     private String audio;
 
     public Listening() {}
