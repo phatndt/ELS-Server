@@ -1,15 +1,20 @@
 package com.example.model;
 
+import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "listeningquestion")
+@Table(name = "listeningQuestion")
 public class ListeningQuestion {
+    @Column(name = "id")
     private String uuid;
+    @Column(name = "listeningId")
     private String listeningUuid;
+    @Column(name = "content")
     private String content;
+    @Column(name = "answer")
     private String answerKey;
 
     public ListeningQuestion() {
