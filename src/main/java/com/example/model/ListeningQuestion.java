@@ -24,11 +24,11 @@ public class ListeningQuestion {
     }
 
     @Id
-    public String getUuid() {
+    public String getId() {
         return uuid;
     }
 
-    public void setUuid(String uuid) {
+    public void setId(String uuid) {
         this.uuid = uuid;
     }
 
