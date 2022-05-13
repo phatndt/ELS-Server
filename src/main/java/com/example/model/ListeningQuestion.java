@@ -33,10 +33,12 @@ public class ListeningQuestion {
         this.uuid = uuid;
     }
 
+    @Column(name = "listeningid")
     public String getlisteningId() {
         return listeningId;
     }
 
+    @Column(name = "listeningid")
     public void setlisteningId(String listeningId) {
         this.listeningId = listeningId;
     }
