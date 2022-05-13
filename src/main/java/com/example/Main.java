@@ -18,6 +18,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Map;
 
+@Controller
 @SpringBootApplication
 public class Main {
 //
@@ -31,10 +32,10 @@ public class Main {
     SpringApplication.run(Main.class, args);
   }
 
-//  @RequestMapping("/")
-//  String index() {
-//    return "index";
-//  }
+  @RequestMapping("/")
+  String index() {
+    return "index";
+  }
 
 //  @RequestMapping("/db")
 //  String db(Map<String, Object> model) {
