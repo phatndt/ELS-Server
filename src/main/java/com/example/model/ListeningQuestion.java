@@ -6,7 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "listeningQuestion")
+@Table(name = "listeningquestion")
 public class ListeningQuestion {
     private String uuid;
     private String listeningId;
