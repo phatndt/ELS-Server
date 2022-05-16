@@ -25,6 +25,6 @@ public class ListeningQuestionController {
     @GetMapping("/listeningQuestion/{id}")
     @SuppressWarnings (value="unchecked")
     public List<ListeningQuestion> getListeningQuestionByListeningLesson(@PathVariable String id) {
-        return (List<ListeningQuestion>) listeningQuestionRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Resource not found"));
+        return listeningQuestionRepository.getListeningQuestionByLesson(id);
     }
 }
