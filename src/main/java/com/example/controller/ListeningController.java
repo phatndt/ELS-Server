@@ -16,16 +16,10 @@ import java.util.List;
 public class ListeningController {
     @Autowired
     private ListeningRepository listeningRepository;
-//    @Autowired
-//    private ListeningQuestionRepository listeningQuestionRepository;
 
     @GetMapping("/listening")
     public List<Listening> getAllListening() {
         return listeningRepository.findAll();
     }
 
-//    @GetMapping("/listeningQuestion")
-//    public List<ListeningQuestion> getAllListeningQuestion() {
-//        return listeningQuestionRepository.findAll();
-//    }
 }
