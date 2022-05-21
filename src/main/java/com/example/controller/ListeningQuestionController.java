@@ -23,7 +23,6 @@ public class ListeningQuestionController {
     }
 
     @GetMapping("/listeningQuestion/{id}")
-    @SuppressWarnings (value="unchecked")
     public List<ListeningQuestion> getListeningQuestionByListeningLesson(@PathVariable String id) {
         return listeningQuestionRepository.getListeningQuestionByLesson(id);
     }
