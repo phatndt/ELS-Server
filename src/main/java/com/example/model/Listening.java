@@ -14,14 +14,18 @@ public class Listening {
     private int duration;
     private String audio;
 
+    private String image;
+
+
     public Listening() {}
 
-    public Listening(String uuid, String title, String content, int duration, String audio) {
+    public Listening(String uuid, String title, String content, int duration, String audio, String image) {
         this.uuid = uuid;
         this.title = title;
         this.content = content;
         this.duration = duration;
         this.audio = audio;
+        this.image = image;
     }
 
     public void setId(String uuid) {
@@ -64,4 +68,14 @@ public class Listening {
     public void setContent(String content) {
         this.content = content;
     }
+
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
 }
